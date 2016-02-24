@@ -133,7 +133,7 @@ class ClientHandler(SocketServer.BaseRequestHandler):
                         pass
 
     def handle_names(self):
-        if not user_logged_in():
+        if not self.user_logged_in():
             self.send_error("not logged in")
         else:
             names = []
