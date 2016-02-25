@@ -46,7 +46,7 @@ class Client:
                 if len(inp) <= 1:
                     print("please type <content>")
                     continue
-                content = "".join(inp[1:])
+                content = " ".join(inp[1:])
 
             data = {
                     'request': command,
